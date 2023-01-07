@@ -25,7 +25,7 @@ export default function App() {
 	return (
 		<NavigationContainer>
 			<Stack.Navigator>
-				{!isFirstLaunch && (
+				{isFirstLaunch && (
 					<Stack.Screen
 						name="onboardingScreen"
 						component={OnboardingScreen}
